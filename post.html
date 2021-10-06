@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="farm_ui.php">FarmTogether</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="farm_ui.php">Newsfeed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.php">Logout</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <form action="post_con.php" method="POST" enctype="multipart/form-data">
+  <div class="container">
+    <h1>Post For an Investor</h1>
+    <p>Please fill in this form to Post.</p>
+    <hr>
+    
+    <input type="text" placeholder="Title" name="title" id="title"  required>
+    
+    <input type="text" placeholder="Location" name="location" id="location" required>
+     <input type="text" placeholder="Minimum Investment" name="min_inv" id="min_inv" required>
+   
+    <input type="text" placeholder="Estimated Return Profit" name="est" id="est" required>
+    
+    
+        <input type="text" placeholder="Farm Type" name="farm_t" id="farm_t" required>
+
+            <input type="text" placeholder="Description" name="des" id="des" required>
+
+  
+      <label for="pimage">Image:</label>
+      <input type="file" id="pimage" name="pimage">
+      <br>
+
+  <input type="text" placeholder="Profit Return Deadline Ex:YYYY-MM-DD" name="prd" id="prd" required>
+    <hr>
+    
+    <button type="submit" class="registerbtn">Publish</button>
+                  </div>
+                   
+                  </div>
+                    
+                </form>
+              </article>
+            </section></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</head>
+</html>
